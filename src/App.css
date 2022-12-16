@@ -1,0 +1,149 @@
+.n img{
+  width: 350px;
+  height: 450px;
+  line-height:0;
+
+}
+
+body{
+  color: #7ca5b8; 
+  
+}
+.Logo{
+    font-size: 70px;
+    text-align: center;
+    /* font-family: 'Cormorant Unicase', serif; */
+}
+
+.FormElement {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.FormElement input{
+    background-color: #6f91a14e;
+    border-radius: 25px;
+    padding: 5px 10px; 
+    max-width: 200px;
+}
+
+.FormElement label{
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.FormElement button{
+   border-radius: 25px; 
+   font-size: 20px;
+   margin-top: 20px;
+   padding: 5px 5px;
+   width:150px;
+}
+
+.Logo {
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(74, 33, 98); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .02em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+
+
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    100% { border-color: rgb(26, 28, 36); }
+  }
+
+.PageWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 30vh;
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 50vw;
+  filter: sepia();
+  background-color: brown;
+  border-radius: 290px;
+}
+
+.PageWrapper2{
+  
+  filter: sepia();
+  display: flex;
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  opacity: 0.4;
+}
+
+.b{
+  min-height: 20vh;
+}
+
+.p {
+   width: 220px;
+   height: 300px;
+   margin-top: 10px;
+
+}
+
+.Upload{
+  display: flex; 
+  justify-content: space-evenly;
+  columns: row;
+  flex-wrap:wrap;
+  /* background-color: black; */
+}
+
+.spacecontainer{
+    display: flex;
+    columns: row;
+    justify-content: center;
+}
+
+.options{
+  text-align: center;
+  
+}
+
+.files{
+  transition-duration: 0.4s;
+  font-size: 15px;
+  width: 20vw;
+  
+ 
+}
+.files:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.options h1{
+  font-size: 100px;
+}
+
+.createPostPage{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width:50vw;
+}
