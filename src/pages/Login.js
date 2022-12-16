@@ -5,7 +5,6 @@ import Header from "../components/Header";
 import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
 import Main from "../components/Main";
 
-
 function LoginPage({isLoggedIn, setIsLoggedIn, setUserInformation}) {
     const navigate = useNavigate();
     const [errors,setErrors]=  useState();
@@ -13,7 +12,6 @@ function LoginPage({isLoggedIn, setIsLoggedIn, setUserInformation}) {
     useEffect(()=> {
         if(isLoggedIn) navigate("/");
     }, [isLoggedIn]); 
-
 
     const loginUser= useCallback(
         (e) => {
@@ -45,34 +43,16 @@ function LoginPage({isLoggedIn, setIsLoggedIn, setUserInformation}) {
     return(
         <>
        <div className="b">
-        <div className="PageWrapper2">
-        
-
-            <Main /> 
-
-                </div>
-             </div>
-           
-
+            <div className="PageWrapper2">
+                <Main/> 
+            </div>
+        </div>
             <div className="PageWrapper">
-              
-            <h1 className= "Logo"> WELCOME</h1>
-
-            <LoginForm  loginUser={loginUser}/> 
-            <Header className="h" isLoggedIn={isLoggedIn}  setIsLoggedIn={setIsLoggedIn} setUserInformation= {setUserInformation}/> 
-
-              
-
-</div>
-
-
-
-              <p>{errors}</p>
-           
-         
-         
-         
-       
+                <h1 className= "Logo"> WELCOME</h1>
+                <LoginForm  loginUser={loginUser}/> 
+                <Header className="h" isLoggedIn={isLoggedIn}  setIsLoggedIn={setIsLoggedIn} setUserInformation= {setUserInformation}/> 
+            </div>
+            <p>{errors}</p>
         </>
     );
 }

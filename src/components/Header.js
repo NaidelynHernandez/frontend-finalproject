@@ -17,8 +17,6 @@ function Header({isLoggedIn, setIsLoggedIn, setUserInformation}){
     
     return(
        <header>
- 
-
         <nav>
             {isLoggedIn && (<Link to="/">
               <p> Home</p>  
@@ -43,13 +41,6 @@ function Header({isLoggedIn, setIsLoggedIn, setUserInformation}){
 
             
         </nav>
-
-      
-       
-
-    
-
-
         </header>
     ); 
     }

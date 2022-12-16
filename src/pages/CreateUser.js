@@ -49,7 +49,6 @@ return(
         <h1> Create User</h1>
         <CreateUserForm signUpUser={signUpUser} /> 
         <p>{errors}</p>
-       
     </div>
     </>
 );
