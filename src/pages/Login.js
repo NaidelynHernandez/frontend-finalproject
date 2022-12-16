@@ -48,7 +48,7 @@ function LoginPage({isLoggedIn, setIsLoggedIn, setUserInformation}) {
             </div>
         </div>
             <div className="PageWrapper">
-                <h1 className= "Logo"> WELCOME</h1>
+                <h1 className= "Logo"> COLLECTIVE</h1>
                 <LoginForm  loginUser={loginUser}/> 
                 <Header className="h" isLoggedIn={isLoggedIn}  setIsLoggedIn={setIsLoggedIn} setUserInformation= {setUserInformation}/> 
             </div>
