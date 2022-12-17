@@ -48,6 +48,7 @@ body{
   margin: 0 auto; 
   overflow: hidden;
   white-space: nowrap; 
+  font-size: 130px;
 }
   
   @keyframes typing {
@@ -63,7 +64,7 @@ body{
 .PageWrapper{
   align-items: center;
   background-color: brown;
-  border-radius: 290px;
+  border-radius: 260px;
   display: flex;
   filter: sepia();
   flex-direction: column;
