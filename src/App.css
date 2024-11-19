@@ -1,42 +1,11 @@
-body{
-  color: #7ca5b8; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.n img{
-  height: 450px;
-  line-height:0;
-  width: 350px;
-}
-
-.Logo{
-  font-size: 70px;
-  text-align: center;
-}
-
-.FormElement {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.FormElement input{
-  background-color: #6f91a14e;
-  border-radius: 25px;
-  max-width: 200px;
-  padding: 5px 10px; 
-}
-
-.FormElement label{
-  font-size: 17px;
-  margin-top: 10px;
-}
-
-.FormElement button{
-   border-radius: 25px; 
-   font-size: 20px;
-   margin-top: 20px;
-   padding: 5px 5px;
-   width:150px;
+.Logo {
+  font-family: "Noticia Text", serif;
+  font-weight: 400;
+  
+  font-style: normal;
+  color: rgb(0, 0, 0);
 }
 
 .Logo {
@@ -48,7 +17,7 @@ body{
   margin: 0 auto; 
   overflow: hidden;
   white-space: nowrap; 
-  font-size: 130px;
+  font-size: 90px;
 }
   
   @keyframes typing {
@@ -61,32 +30,106 @@ body{
     100% { border-color: rgb(26, 28, 36); }
   }
 
-.PageWrapper{
-  align-items: center;
-  background-color: brown;
-  border-radius: 260px;
-  display: flex;
-  filter: sepia();
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 50vw;
-  min-height: 30vh;
-  padding: 0px;  
+
+  .homepageContainers {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+  
+  .PageWrapper {
+    align-items: center; 
+    background-color: brown;
+    filter: sepia(); 
+    max-width: 40%; 
+    height: 100vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    opacity: 0.85;
+    padding:3vh;
+  }
+  
+  .PageWrapper2 {
+    filter: sepia(); 
+    background-color: #ddd; 
+    max-width: 60%; 
+    height: 100vh;
+    opacity: 0.4;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+ 
+  }
+  
+.homepage img{
+  height: 450px;
+  line-height:0;
+  width: 350px;
 }
 
-.PageWrapper2{
+.FormElement {
   align-items: center;
   display: flex;
-  filter: sepia();
-  height: 100vh;
-  justify-content: center;
-  margin-left: 50px;
-  opacity: 0.4;
-  position: fixed;
-  width: 100vw;
-  z-index: -1;
+  flex-direction: column;
+ 
 }
+.FormElement button{
+  border-radius: 25px; 
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 5px 5px;
+  width:150px;
+}
+.FormElement input{
+  background-color: #292a2d5b;
+  border-radius: 5px;
+  max-width: 200px;
+  padding: 5px 10px; 
+}
+
+.FormElement label{
+  font-size: 15px;
+  margin-top: 4vh;
+}
+
+
+
+
+
+/*  SEPARATION  */
+
+
+.UserProfilePage{
+  display: flex;
+  justify-content: center;
+}
+.createPostPage{ 
+  background-color: rgb(80, 88, 69);
+  display: flex;
+  justify-content: center;
+  width:50vw;
+}
+
+.inputN{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+
+.inputN button{
+  border-radius: 22px;
+  margin-top: 2vh;
+}
+/*
+
+
+
+
+
+/* 
 
 .b{
   min-height: 20vh;
@@ -98,12 +141,7 @@ body{
   width: 220px;  
 }
 
-.Upload{
-  display: flex; 
-  columns: row;
-  flex-wrap:wrap;
-  justify-content: space-evenly;
-}
+
 
 .spacecontainer{
   columns: row;
@@ -130,12 +168,6 @@ body{
   font-size: 100px;
 }
 
-.createPostPage{
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  width:50vw;
-}
 
 
 .NContainer{
@@ -157,11 +189,14 @@ body{
 }
 
 input{
-  height: 5vh;
+  height: 4vh;
+  border-radius:10px;
 }
+
 textarea{
   height: 20vh;
   margin-top: 20px;
+  
 }
 
 .Cbutton {
@@ -169,14 +204,4 @@ textarea{
   width:10vw;
   padding: 10px;
 }
-
-/* .Fortext{
-  border: 9px solid green;
-  display:flex;
-  flex-direction: column;
-}
-
-.post{
-  border: 2px solid blue;
-  height: 20vh;
-} */
+  */

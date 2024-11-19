@@ -14,29 +14,25 @@ import IMGTWELVE from "../img12.jpeg"
 
 function Main (){
     return(
-        <div className="main">
-            
-            <h1> </h1>
-            <div className= "n">
-            <h1 class="Logo">  </h1>
-            <img src={IMG}></img>
-            <img src={IMGONE}></img>
-            <img src={IMGEIGHT}></img>
-            <img src={IMGSEVEN}></img>
+            <div className= "homepage">
+                <h1 class="Logo">  </h1>
+                <img src={IMG}></img>
+                <img src={IMGONE}></img>
+                <img src={IMGEIGHT}></img>
+                <img src={IMGSEVEN}></img>
 
-            <img src={IMGTWO}></img>
-            <img src={IMGTHREE}></img>
+                <img src={IMGTWO}></img>
+                <img src={IMGTHREE}></img>
 
-            <img src={IMGFOUR}></img>
-            
-            <img src={IMGFIVE}></img>
-            <img src={IMGNINE}></img>
-            <img src={IMGTEN}></img>
-            <img src={IMGELEVEN}></img>
-            <img src={IMGTWELVE}></img>
-
+                <img src={IMGFOUR}></img>
+                
+                <img src={IMGFIVE}></img>
+                <img src={IMGNINE}></img>
+                <img src={IMGTEN}></img>
+                <img src={IMGELEVEN}></img>
+                <img src={IMGTWELVE}></img>
             </div>
-        </div>
+      
     );
     }
 export default Main; 

@@ -26,12 +26,13 @@ await addDoc(postsCollectionRef,{title, postText});
     
     return(
         <>
-    <Header isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} setUserInformation= {setUserInformation}/> 
+        <Header isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} setUserInformation= {setUserInformation}/> 
+        <div className= "UserProfilePage" >
             <div className="PageWrapper">
-            <h1> User Profile</h1>
-            <p><strong> Email: </strong>{userInformation.email}</p>
-        </div>  
-        <div> 
+                <h1> User Profile</h1>
+                <p><strong> Email: </strong>{userInformation.email}</p>
+            </div>  
+         
             <div className= "createPostPage">
                 <div className="NContainer">
                     <h2> create post</h2>
@@ -40,7 +41,6 @@ await addDoc(postsCollectionRef,{title, postText});
                         <input placeholder= "title.." onChange={(event)=> {setTitle(event.target.value);}}/>
                     </div>
                     <div className="inputN">
-                        <label>  </label>
                         <textarea placeholder="write anything" 
                         onChange={(event)=> {setPostText(event.target.value);}}/>
                         <button className="Cbutton"onClick={createNote}> Submit</button>
@@ -49,6 +49,7 @@ await addDoc(postsCollectionRef,{title, postText});
                 </div>
             </div>
         </div>
+   
         </>
     );
     }
